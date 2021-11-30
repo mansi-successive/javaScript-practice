@@ -1,0 +1,21 @@
+form {
+  /* width: 90%; */
+  max-width: 800px;
+  margin: 5em auto;
+  text-align: center;
+  background-color: #5bd4da;
+  padding: 23px 19px;
+  box-shadow: deeppink;
+  box-shadow: 0.3em 0.3em 1em rgb(0 0 0 / 30%);
+}
+input {
+  padding: 12px 10px;
+}
+table,
+#counter {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px, 15px;
+  font-size: 25px;
+}
