@@ -1,0 +1,88 @@
+/* Mobile */
+/* body {
+  background: url(../images/CB-Background-141-864x1080.jpg) no-repeat
+    center/cover;
+} */
+@media only screen and (max-width: 600px) {
+  .burger-nav {
+    height: 3em;
+    display: block;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    background: #d621b76b;
+  }
+
+  .material-icons {
+    color: black;
+    padding-top: 0.2em;
+  }
+
+  header nav ul {
+    overflow: hidden;
+    background: #21c6c647;
+    height: 0;
+  }
+
+  header nav ul.open {
+    height: auto;
+  }
+
+  header nav ul li {
+    list-style: none;
+    width: 90%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .navlink {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family: "Poppins", sans-serif;
+  }
+
+  header nav ul li a {
+    padding: 0.5em;
+    border-bottom: 1px solid #404040;
+    display: block;
+  }
+
+  .contact {
+    border: none;
+  }
+}
+
+/* Normal */
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .navlink {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+  }
+
+  .navbar-wrapper {
+    background-color: #39c0ad;
+    padding: 1em 0;
+    box-shadow: 0.3em 0.3em 1em rgb(0 0 0 / 30%);
+    color: white;
+  }
+
+  .navlink:hover {
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .burger-nav {
+    display: none;
+  }
+}

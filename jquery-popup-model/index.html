@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pop-up-model</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>jQuery Modal task</h1>
+      <button class="modal-toggle">Show modal</button>
+    </div>
+
+    <div class="modal">
+      <div class="modal-overlay modal-toggle"></div>
+      <div class="modal-wrapper modal-transition">
+        <div class="modal-header">
+          <h2 class="modal-heading">This is a modal</h2>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              eum delectus, libero, accusantium dolores inventore obcaecati
+              placeat cum sapiente vel laboriosam similique totam id ducimus
+              aperiam, ratione fuga blanditiis maiores.
+            </p>
+            <div><button class="modal-toggle">click</button></div>
+
+            <script>
+              $(".modal-toggle").on("click", function (e) {
+                e.preventDefault();
+                $(".modal").toggleClass("is-visible");
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
